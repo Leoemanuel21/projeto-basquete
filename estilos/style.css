@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --cor0: #111111;
-    --cor1: #F7F7F7;
-    --cor2: #FFFFFF;
+    --cor0: #FF3C00;
+    --cor1: #FFD700;
+    --cor2: #1A1A1A;
+    --cor3: #000000;
+    --cor4: #FFFFFF;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Poppins', sans-serif;
@@ -18,21 +20,22 @@
 }
 
 body, html{
-    background-color: lightgray;
+    background-color: #000000;
 }
 
 header{
-    background-color: gray;
+    background-color: #000000;
 }
 
 header > h1{
+    color: #FF3C00;
     padding: 10px;
     text-align: center;
 }
 
 i#burguer{
-    background-color: rgb(48, 48, 48);
-    color: white;
+    background-color: #1A1A1A;
+    color: #FFD700;
     display: block;
     text-align: center;
     padding: 10px;
@@ -40,8 +43,8 @@ i#burguer{
 }
 
 i#burguer:hover{
-    background-color: white;
-    color: black;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 menu{
@@ -57,26 +60,37 @@ menu > ul > li > a{
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid gray;
+    background-color: #1A1A1A;
+    color: #FFD700;
+    border-top: 2px solid #000000;
 }
 
 main{
     width: 90vw;
-    background-color: white;
+    background-color: #FFFFFF;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 
-main img{
+img{
     width: 100%;
 }
 
-article > h2{
+main > article > h1{
+    text-align: justify;
+    margin: 20px 0px 20px 0px;
+    text-indent: 20px;
+}
+
+main > article > p{
     text-align: justify;
     margin-bottom: 20px;
-    text-indent: 20px;
+}
+
+footer{
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+    color: #FFFFFF;
 }

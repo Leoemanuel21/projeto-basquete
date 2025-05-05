@@ -8,7 +8,18 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px */
 
-@media screen and (min-width: 768px){
+:root{
+    --cor0: #FF3C00;
+    --cor1: #FFD700;
+    --cor2: #1A1A1A;
+    --cor3: #000000;
+    --cor4: #FFFFFF;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 608px){
     i#burguer{
         display: none;
     }
@@ -27,23 +38,31 @@ Grandes telas: acima de 1200px */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
-    body{
-        background-image: url(../Imagens/Background-Jordan.jpg);
+    header > h1{
+        padding: 50px 0px 50px 0px;
+    }
+
+    menu > ul > li > a{
+        border-top: none;
+        background-color: #000000;
+    }
+    menu > ul > li > a:hover{
+        background-color: #FFFFFF;
+        color: #000000;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px){ /* DESKTOP */
-    body{
-        background-image: url();
-    }
-}
-
-@media screen and (min-width: 1200px){ /* GRANDES TELAS */
-    body{
-        background-image: url();
+@media screen and (min-width: 992px) { /* DESKTOP */
+    header > h1{
+        padding: 50px 0px 50px 0px;   
     }
 
-    main{
-        width: 700px;
+    menu > ul > li > a{
+        border-top: none;
+        background-color: #000000;
+    }
+    menu > ul > li > a:hover{
+        background-color: #FFFFFF;
+        color: #000000;
     }
 }
