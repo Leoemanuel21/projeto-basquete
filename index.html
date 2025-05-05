@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basquete</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>CURIOSIDADES SOBRE O BASQUETE</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+                <ul>
+                    <li><a href="#">Times</a></li>
+                    <li><a href="#">Regras</a></li>
+                    <li><a href="#">Equipamentos</a></li>
+                    <li><a href="#">Treinos</a></li>
+                </ul>
+        </menu>
     </header>
-    <nav>
-        <a href="#">Times</a>
-        <a href="#">Regras</a>
-        <a href="#">Equipamentos</a>
-        <a href="#">Treinos</a>
-    </nav>
     <main>
         <article>
             <img src="Imagens/Background-Jordan.jpg" alt="Background-Jordan">
@@ -48,5 +53,21 @@
     <footer>
         <p>Site criado por Leonardo Emanuel para a praticar.</p>
     </footer>
+    <script>
+        function mudouTamanho(){
+            if(window.innerwidth >= 768){
+                itens.style.display = 'block'   
+            }else{
+                    itens.style.display = 'none'
+                }
+        }
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
