@@ -53,6 +53,10 @@ Grandes telas: acima de 1200px */
 }
 
 @media screen and (min-width: 992px) { /* DESKTOP */
+    body, html{
+        background-color: #f30d0d71;
+    }
+
     header > h1{
         padding: 50px 0px 50px 0px;   
     }
