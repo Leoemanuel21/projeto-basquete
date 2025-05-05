@@ -38,6 +38,10 @@ Grandes telas: acima de 1200px */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
+    body, html{
+        background-color: #0d1cf371;
+    }
+
     header > h1{
         padding: 50px 0px 50px 0px;
     }
