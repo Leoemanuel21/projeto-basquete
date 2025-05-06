@@ -8,8 +8,9 @@
     --cor0: #FF3C00;
     --cor1: #FFD700;
     --cor2: #1A1A1A;
-    --cor3: #000000;
-    --cor4: #FFFFFF;
+    --cor3: #BFBE9C;
+    --cor4: #000000;
+    --cor5: #FFFFFF;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Poppins', sans-serif;
@@ -117,7 +118,7 @@ main.treinos > article > h1{
 }
 
 main.treinos > article > h2{
-    padding: 10px 0px 0px 40px;
+    padding: 10px 0px 5px 40px;
     margin: 0px -10px -5px -10px;
     background-color: #FF3C00;
     font-family: var(--fonte-secundária);
@@ -137,6 +138,17 @@ div.video > iframe{
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #FF3C00;
 }
 
 footer{
