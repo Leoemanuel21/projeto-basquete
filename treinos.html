@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Treinos de Basquete</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Times</a></li>
+                <li><a href="#">Regras</a></li>
+                <li><a href="#">Equipamentos</a></li>
+                <li><a href="treinos.html">Treinos</a></li>
+            </ul>
+    </menu>
+    </header>
+    <main id="treinos">
+        <article>
+            <h1>Treinos Individuais</h1>
+            <h2>Bandeja</h2>
+            <h2>Chute</h2>
+            <h2>Passe</h2>
+            <h2>Defesa</h2>
+        </article>
+        <article>
+            <h1>Treinos Coletivos</h1>
+            <h2>Jogadas Ensaiadas</h2>
+            <h3>5 Abertos para Infiltração</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SYsjqE8V36c?si=-sZGiMhFs4_zv4PJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h2>Defesa</h2>
+            <h3>Defesa Zona 2x3</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9mxLl9TP1V8?si=_XRxLMtM1SIjxjkX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h2>Tier B</h2>
+            <h2>Tier C</h2>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por Leonardo Emanuel para a praticar.</p>
+    </footer>
+    <script>
+        function mudouTamanho(){
+            if(window.innerwidth >= 768){
+                itens.style.display = 'block'   
+            }else{
+                    itens.style.display = 'none'
+                }
+        }
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

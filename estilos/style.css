@@ -25,11 +25,12 @@ body, html{
 
 header{
     background-color: #000000;
+    
 }
 
 header > h1{
     color: #FF3C00;
-    padding: 10px;
+    padding: 20px 0px 20px 0px;  
     text-align: center;
 }
 
@@ -48,7 +49,7 @@ i#burguer:hover{
 }
 
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
@@ -87,6 +88,37 @@ main > article > h1{
 main > article > p{
     text-align: justify;
     margin-bottom: 20px;
+}
+
+main#treinos > article > h1{
+    text-align: center;
+}
+
+main#treinos > article > h2{
+    text-align: center;
+}
+
+main#treinos > article > h3{
+    padding: 10px 0px 0px 40px;
+    margin: 0px -10px -5px -10px;
+    background-color: #FF3C00;
+    font-family: var(--fonte-destaque);
+}
+
+div.video{
+    background-color: #FF3C00;
+    margin: 0px -10px 20px -10px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer{
